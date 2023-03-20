@@ -105,4 +105,10 @@ console.log(pizza.price);
 ** Often times, it's nice to create an interface to a class's properties like this, where a method appears as a value. It creates a more simple interface
 ****/
 
+/**** CONCLUSION
+* Setters allow us to validate data before assigning it to a property
+* Getters allow us to compute a value on the fly instead of simply pulling it out of a property
+* The get and set keywords just make our object's interface more simple.
+****/
 
+ 
