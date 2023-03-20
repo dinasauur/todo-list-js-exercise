@@ -24,6 +24,7 @@ function logTaskState(task) {
 */
 
 // Scrap the arrays and use OOP
+// We created a function called newTask which would return a new task object each time it was called.
 const newTask = function(title, description) {
   const task = {
     title: title,
