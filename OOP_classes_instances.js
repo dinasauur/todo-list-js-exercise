@@ -2,7 +2,7 @@ class Pizza {
 
   // To add a method to a class with the following syntax: (For notes involving constructor(), see below.)
   constructor(size, crust) {
-      // To add properties to a class, simply use the 'this' keyword followed by the property name, then assign it a value:
+    // To add properties to a class, simply use the 'this' keyword followed by the property name, then assign it a value:
     this.toppings = ['cheese'];
     this.sauce = ['tomato'];
     this.size = size;
@@ -10,9 +10,9 @@ class Pizza {
   }
 
   addTopping(topping) {
-    this.toppings.push(topping)
+    this.toppings.push(topping);
   }
-};
+}
 
 // This will **NOT** work.
 // That's because addTopping is a method only available to actual instances of Pizza
@@ -40,8 +40,7 @@ let pizza3 = new Pizza('large', 'thin');
 console.log(pizza3);
 
 
-/****
-* NOTES ON CLASSES:
+/**** NOTES ON CLASSES:
 * The class pattern allows us to DRY up our code by defining the default state and behaviour for all pizzas in one place instead.
 * In OOP, classes are blueprints (templates) that we use to create instances of objects.
 * A class describes what the object is going to be and we can create new objects using the class.
@@ -52,8 +51,7 @@ console.log(pizza3);
 * So pizza1 and pizza2 are instances of the Pizza class.
 ****/
 
-/****
-* NOTES ON CONSTRUCTOR:
+/**** NOTES ON CONSTRUCTOR:
 * constructor() is a special kind of method that gets executed when an object instance is created from a class.
 * This is a great place to setup default state for new instances.
 * In other words, the constructor is for setting default values for any new object's properties.
@@ -63,8 +61,7 @@ console.log(pizza3);
 * Since it's a method, we can also pass in values to the constructor method. Take a look at example pizza3
 ****/
 
-/****
-* NOTES ON OBJECT-ORIENTED PROGRAMMING - OOP
+/**** NOTES ON OBJECT-ORIENTED PROGRAMMING - OOP
 * OOP's goals are to help us with code organization, re-use and modularity
 * Object orientation proposed to do this by encapsulating state (properties) and behaviours (methods) that are similar into these things called objects.
 * We saw an example of this with the Todo List app exercise. We created a function called newTask which would return a new task object each time it was called.
@@ -73,8 +70,7 @@ console.log(pizza3);
 * In class-based languages that are more strict (Ruby, Java, etc.), we are only able to use classes to solve this issue. In JavaScript we have both options.
 ****/
 
-/****
-* NOTES ON PRIMITIVES AS OBJECTS
+/**** NOTES ON PRIMITIVES AS OBJECTS
 * Each primitive in JavaScript (excluding symbol which has weird rules) has a corresponding object constructor;
 * An object constructor can be invoked with the word new, as seen below.
 * Note that when we call object constructors we create new, unique instances of the objects requested.
@@ -95,16 +91,13 @@ console.log(greeting == greetingObj); // true
 console.log(greeting === greetingObj); // false
 ****/
 
-/****
-* CONCLUSION
+/**** CONCLUSION
 * In this section, you learned about how to use classes as a way of simplifying the creation of objects that share the same set of behaviour and properties. You also became familiar with:
 * The class syntax.
 * The purpose of the new keyword and the concept of constructor functions.
 * The difference between classes and instances.
 * How we are able to create new object instances with and without class.
 ****/
-
-
 
 
 
